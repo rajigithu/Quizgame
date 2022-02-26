@@ -1,0 +1,25 @@
+.welcome , question-container{
+    border: 1px solid black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    position:absolute;
+    top: 50%;
+    height: 250px;
+    width: 50%;
+    margin:auto;
+    box-sizing: content-box;
+   
+             
+}
+.center{
+    display:flex;
+    justify-content:center;
+    flex-direction: column;
+    align-items: center;
+            }
+            p{ 
+                padding: 20px;
+            }
+            #btnBegin{
+                padding:20px 30px;
+            }
