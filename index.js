@@ -1,13 +1,13 @@
 var countDownTimer;
         var TimerInteval;
-        var arraryofquestions = [];
-        const maxtime = 5 * 60 *; // Time is in seconds
+        var arrayofquestions = [];
+        const maxtime = 5* 60*;// Time is in seconds
         function setCountDownTimer(){
             countDownTimer = maxtime;
         }
         //when the person clicks the begin button the timer starts
         //start time
-        timeInterval = setInterval(update,1000);
+        TimerInteval = setInterval(update,1000);
         function updateTimer() {
             countDownTimer = countDownTimer - 1;
         }
@@ -34,20 +34,20 @@ var countDownTimer;
                 correctAnswer:3
 
             };
-            arrayofQuestions.push(question1);
-            arrayofQuestions.push(question2);
+            arrayofquestions.push(question1);
+            arrayofquestions.push(question2);
 
-            console.log(" Setupquestions arrayofquestions:",arrayofQuestions);
+            console.log(" Setupquestions arrayofquestions:",arrayofquestions);
 
         }
         function nextQuestion(){
-            for(let i= 0; i<arrayofQuestions.length; i++){
+            for(let i= 0; i <arrayofquestions.length; i++){
         }
         function showQuestion(questionindex){
             let questionsection = document.getElementById('question');
             let newQuestions = document.createElement('div');
-            newQuestion.id = arrayofquestions[questionindex].id;
-            newQuestion.innerText = arrayofquestions9questionindex].question;
+            newQuestions.id = arrayofquestions[questionindex].id;
+            newQuestions.innerText = arrayofquestions9questionindex].question;
             questionsection.appendChild(newQuestions)
             
         }
