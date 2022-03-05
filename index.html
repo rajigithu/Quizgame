@@ -8,10 +8,11 @@
     <title>QuizGame</title>
     <link rel="stylesheet" href="styles.css";>
     <link rel="question" href="question.html";>
+    <script src="index.js"></script>
 </head>
 <body>
     <div id=""main center">
-    <div class ="Welcome">
+    <div id ="greeting" class ="Welcome">
         <p>Test your front end developer skills by
             answering the following questions</p>
             <!--<form> <button type ="submit" formaction="/question.html"> Begin </button></form>-->
@@ -19,7 +20,13 @@
             <button id="btnBEGIN"onclick="dosomething();">BEGIN </button>
 
     </div>
+    <div id ="score-board" class ="hide">
+        <div id = "timercontainer">Time remaining:<span id="timer" style = text-align:left></span></div>
+        <div id = "scorecontainer">Score:<span id="Score" style = text-align:left></span></div>
+        <span style ="text-align:left">Time Remaining:</span>
+    </div>
     </div>
     
 </body>
+<script defer src="index.js" ></script>
 </html>
