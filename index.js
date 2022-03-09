@@ -502,12 +502,23 @@ function showHighScores() {
     : [];
 
     //remove this line when you have updated the code.
-    alert('Update the code to show the high scores in a table');
+   // alert('Update the code to show the high scores in a table');
 
     let i=0;
     while(i<hScores.length ) {
         console.log("hScores[i].score: ", hScores[i].score);
         console.log("hScores[i].initals: ", hScores[i].initials);
+        let tableRowData = document.createElement('tr');
+    let tableData0 = document.createElement('td');
+    let tableData1 = document.createElement('td');
+    let tableData2 = document.createElement('td');
+    tableData0.innerText = i+1;
+    tableData1.innerText = hScores[i].score;
+    tableData2.innerText = hScores[i].initials;
+    tableRowData.appendChild(tableData0);
+    tableRowData.appendChild(tableData1);
+    tableRowData.appendChild(tableData2);
+    table.appendChild(tableRowData);
         //update here to add array values to the table.
         i++;
     }
